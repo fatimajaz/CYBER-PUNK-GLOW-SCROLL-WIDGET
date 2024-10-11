@@ -17,25 +17,20 @@
         }
 
         .neon-border-wrapper {
-            border: 3px solid #8A2BE2;
+            border: 3px solid #DA70D6;
             padding: 10px 20px;
             border-radius: 5px;
-            box-shadow: 
-                0 0 10px #8A2BE2, 
-                0 0 20px #9400D3, 
-                0 0 30px #FF00FF, 
-                0 0 40px #FF00FF;
             background-color: rgba(0, 0, 0, 0.8);
             overflow: hidden;
             white-space: nowrap;
-            width: 80%;
+            width: 100%;
             will-change: transform;
         }
 
         .scrolling-content {
             display: flex;
             animation: scroll-left 10s linear infinite;
-            width: 104%; /* Adjust width to accommodate repeated text */
+            width: 100%; /* Adjust width to accommodate repeated text */
             will-change: transform;
         }
 
@@ -69,6 +64,7 @@
             <span class="scrolling-text" id="live-info-3"></span>
             <span class="scrolling-text" id="live-info-4"></span>
             <span class="scrolling-text" id="live-info-5"></span>
+          <span class="scrolling-text" id="live-info-6"></span>
         </div>
     </div>
 
@@ -86,11 +82,15 @@
             document.getElementById('live-info-3').innerText = liveText;
             document.getElementById('live-info-4').innerText = liveText;
             document.getElementById('live-info-5').innerText = liveText;
+          document.getElementById('live-info-6').innerText = liveText;
         }
 
         setInterval(updateLiveInfo, 1000);
         updateLiveInfo();
     </script>
+</body>
+</html>
+
 </body>
 </html>
 
